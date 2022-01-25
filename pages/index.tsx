@@ -37,7 +37,7 @@ const Home: NextPage = () => {
               </div>
             </a>
           </button>
-          <div className="px-5 py-2 skew-y-8 bg-white/30 backdrop-blur-sm rounded-3xl inline-flex space-x-2 justify-center items-center">
+          <div className="px-5 py-2 skew-y-8 bg-white/30 border border-white/50 shadow shadow-white backdrop-blur-sm rounded-3xl inline-flex space-x-2 justify-center items-center">
             <p className="font-bold">{player}</p>
             <span className="text-center text-sm font-normal">
               Joueurs en ligne
