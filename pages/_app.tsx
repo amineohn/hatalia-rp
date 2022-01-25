@@ -16,7 +16,14 @@ export default function MyApp({
         title={configuration.title}
         description={configuration.description}
       />
-      <Component {...pageProps} />
+      <div
+        className={`bg-cover h-screen overflow-hidden px-7 py-7`}
+        style={{
+          backgroundImage: "url('/static/images/background.jpg')",
+        }}
+      >
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }

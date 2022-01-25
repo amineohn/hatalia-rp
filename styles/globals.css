@@ -1,6 +1,6 @@
 html,
 body {
-  @apply font-default bg-slate-700 h-screen;
+  @apply font-default h-screen overflow-hidden;
 }
 a {
   color: inherit;
