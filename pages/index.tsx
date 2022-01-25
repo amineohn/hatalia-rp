@@ -1,11 +1,12 @@
 import type { NextPage } from "next";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FiveM from "fivem";
 const srv = new FiveM.Server("5.196.199.242:30077");
 
 const Home: NextPage = () => {
   const [player, setPlayer] = useState(0);
   srv.getPlayers().then((data) => setPlayer(data));
+
   return (
     <>
       <div className="flex justify-center items-center backdrop-blur-sm absolute w-full h-screen slide overflow-auto">
@@ -83,7 +84,7 @@ const Home: NextPage = () => {
             <div className="px-5 py-2 skew-y-8 bg-white/30 border border-white/50 shadow shadow-white backdrop-blur-sm rounded-3xl inline-flex space-x-2 justify-center items-center">
               <p className="font-bold">{player}</p>
               <span className="text-center text-sm font-normal">
-                Joueurs en ligne
+                Joueurs en ligne(s)
               </span>
             </div>
           </div>
