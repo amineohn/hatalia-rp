@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import FiveM from "fivem";
 const srv = new FiveM.Server("5.196.199.242:30077");
 
