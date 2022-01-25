@@ -17,7 +17,7 @@ export default function MyApp({
         description={configuration.description}
       />
       <div
-        className={`bg-cover h-screen overflow-hidden px-7 py-7`}
+        className={`bg-cover h-screen overflow-hidden`}
         style={{
           backgroundImage: "url('/static/images/background.jpg')",
         }}
