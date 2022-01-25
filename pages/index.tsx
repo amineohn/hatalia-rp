@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
-import React from "react";
+import React, { useState } from "react";
 import FadeIn from "react-fade-in";
+import FiveM from "fivem";
+const srv = new FiveM.Server("5.196.199.242:30077");
+
 const Home: NextPage = () => {
+  const [player, setPlayer] = useState(0);
+  srv.getPlayers().then((data) => setPlayer(data));
   return (
     <FadeIn className="flex justify-center items-center backdrop-blur-sm absolute w-full h-screen">
       <div className="flex flex-col">
@@ -9,7 +14,7 @@ const Home: NextPage = () => {
           src="/static/images/hatalialogo.png"
           className="w-80 h-80 !backdrop-blur-none"
         />
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center space-y-5">
           <button className="bg-yellow-700/60 skew-x-12 rounded-3xl w-72 shadow-sm shadow-white px-2 py-6 text-[#E9D17C] hover:scale-105 transition transform">
             <a
               href="https://discord.gg/Tmnf2DwzYv"
@@ -32,6 +37,12 @@ const Home: NextPage = () => {
               </div>
             </a>
           </button>
+          <div className="px-5 py-2 bg-white/30 backdrop-blur-sm rounded-3xl inline-flex space-x-2 justify-center items-center">
+            <p className="font-bold">{player}</p>
+            <span className="text-center text-sm font-normal">
+              Joueurs en ligne
+            </span>
+          </div>
         </div>
       </div>
     </FadeIn>
