@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import React, { useState } from "react";
-import FadeIn from "react-fade-in";
 import FiveM from "fivem";
 const srv = new FiveM.Server("5.196.199.242:30077");
 
@@ -27,7 +26,7 @@ const Home: NextPage = () => {
                   votre propre gang et créez votre buissness. Sur le serveur
                   nous vous proposons des scripts et des contenus qualitatifs
                   pour vous divertir sur le serveur. Pleins de nouveauté sera
-                  rajouté sur le serveur au fût et à mesure.
+                  rajouté sur le serveur au fur et à mesure.
                 </p>
               </div>
               <div className="space-y-2 sm:space-y-2 lg:space-y-0">
