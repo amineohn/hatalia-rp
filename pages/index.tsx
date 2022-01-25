@@ -30,7 +30,7 @@ const Home: NextPage = () => {
                   rajouté sur le serveur au fût et à mesure.
                 </p>
               </div>
-              <div>
+              <div className="space-y-2 sm:space-y-2 lg:space-y-0">
                 <span className="font-bold text-white">
                   Contenue Exceptionnel et Optimisé
                 </span>
