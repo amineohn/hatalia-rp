@@ -10,7 +10,7 @@ const Home: NextPage = () => {
           className="w-80 h-80 !backdrop-blur-none"
         />
         <div className="flex justify-center items-center">
-          <button className="bg-white/60 rounded-3xl w-72 shadow-sm shadow-white px-2 py-6 text-[#E9D17C] hover:scale-105 transition transform">
+          <button className="bg-yellow-700/60 skew-x-12 rounded-3xl w-72 shadow-sm shadow-white px-2 py-6 text-[#E9D17C] hover:scale-105 transition transform">
             <a
               href="https://discord.gg/Tmnf2DwzYv"
               target="_blank"
