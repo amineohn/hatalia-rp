@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div className="flex flex-col">
         <img
           src="/static/images/hatalialogo.png"
-          className="w-80 h-80 !backdrop-blur-none"
+          className="w-80 h-80 !backdrop-blur-none skew-y-12"
         />
         <div className="flex flex-col justify-center items-center space-y-5">
           <button className="bg-yellow-700/60 skew-x-12 rounded-3xl w-72 shadow-sm shadow-white px-2 py-6 text-[#E9D17C] hover:scale-105 transition transform">
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
               </div>
             </a>
           </button>
-          <div className="px-5 py-2 bg-white/30 backdrop-blur-sm rounded-3xl inline-flex space-x-2 justify-center items-center">
+          <div className="px-5 py-2 skew-y-8 bg-white/30 backdrop-blur-sm rounded-3xl inline-flex space-x-2 justify-center items-center">
             <p className="font-bold">{player}</p>
             <span className="text-center text-sm font-normal">
               Joueurs en ligne
