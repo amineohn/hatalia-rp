@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="inline-flex space-x-5">
+                      <div className="inline-flex space-x-5 items-center justify-center">
                         <svg
                           className="w-8 h-8 text-black"
                           role="img"
